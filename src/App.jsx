@@ -3,7 +3,7 @@ import './App.css'
 
 function App() {
 
-  const URL = `https://api.thedogapi.com/v1/images/search?api_key=live_dTInATzYCb1o75sVugm74LblSYxSjr0WaspyPa4lgX2zKma5C9MLev1pDxKSCYLs?has_breeds=true?include_breeds=true`;
+  const URL = `https://api.thedogapi.com/v1/images/search?api_key=live_dTInATzYCb1o75sVugm74LblSYxSjr0WaspyPa4lgX2zKma5C9MLev1pDxKSCYLs&has_breeds=true?include_breeds=true`;
 
   const [currentImage, setCurrentImage] = useState(null);
   const [currentWeight, setCurrentWeight] = useState([]);
@@ -39,6 +39,9 @@ function App() {
         <button onClick={apiCall}>🔄Find a new dog!🔄</button>
       <div className="ban-list">
         Ban List: {bannedAttributes}
+      </div><br></br>
+      <div className="history">
+        History: {bannedAttributes}
       </div>
     </div>
   )
